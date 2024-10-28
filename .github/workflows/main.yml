@@ -84,7 +84,7 @@ jobs:
             src-tauri/release/bundle/dmg/*.dmg
 
       - name: CI Upload Linux
-        if: ${{ github.ref_type == 'branch' && matrix.platform == 'ubuntu-latest' }}
+        if: ${{ github.ref_type == 'branch' && matrix.platform == 'ubuntu-22.04' }}
         uses: actions/upload-artifact@v4
         with:
           name: 'Linux Distributions'
